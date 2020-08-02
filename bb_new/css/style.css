@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "MuseoCyrl-500";
+  src: local("Museo Cyrl 500"), local("MuseoCyrl-500"), url("./fonts/subset-MuseoCyrl-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "MuseoCyrl-900";
+  src: local("Museo Cyrl 900"), local("MuseoCyrl-900"), url("./fonts/subset-MuseoCyrl-900.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+html {
+  background-color: #EEF5F7; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 0.2fr 1.9fr;
+  gap: 1px 1px;
+  grid-template-areas: "header search navbar" "menu main indent"; }
+
+.menu {
+  grid-area: menu; }
+
+.main {
+  grid-area: main; }
+
+.indent {
+  grid-area: indent; }
+
+.header {
+  grid-area: header;
+  background-color: white;
+  position: relative; }
+
+.search {
+  grid-area: search;
+  background-color: white; }
+
+.navbar {
+  grid-area: navbar;
+  background-color: white; }
+
+.navbar-icon {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.main-menu {
+  font-family: "Inter", sans-serif;
+  margin-top: 40px;
+  margin-left: 80px; }
+
+.avatar {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px; }
+
+#menu-item {
+  display: inline-block;
+  margin-bottom: 15px;
+  text-decoration: none; }
+
+#header {
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-top: 20px;
+  font-family: "MuseoCyrl-900";
+  font-size: 25px;
+  color: #EF538F;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#diary {
+  font-size: 20px; }
+
+/*# sourceMappingURL=style.css.map */
